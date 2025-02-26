@@ -1,0 +1,104 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.navbar {
+    position: relative; 
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 50px;
+    background-color: white;
+    border-bottom: 1px solid #ddd;
+}
+
+.nav-logo img {
+    height: 50px;
+    width: auto;
+}
+
+
+.nav-link ul {
+    display: flex;
+    list-style: none;
+    gap: 30px;
+    margin: 0;
+    padding: 0;
+}
+
+.nav-link ul li {
+    font-size: 16px;
+    position: relative;
+}
+
+.nav-link ul li a {
+    text-decoration: none;
+    color: black;
+    font-weight: 200;
+    font-size: 20px;
+    padding: 8px 12px;
+    transition: color 0.3s ease-in-out;
+}
+/* giữ màu cho trang active */
+.nav-link ul li a.active{
+    color: #007bff;
+}
+.nav-link ul li a.active::after {
+    color: #007bff;
+    position: absolute;
+    left: 0;
+    bottom: -5px;
+    width: 100%;
+    height: 2px;
+    background: linear-gradient(to right, transparent, blue, transparent); 
+    opacity: 1; 
+    transform: scaleY(0.3);
+}
+
+
+.nav-link ul li a::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -5px;
+    width: 100%;
+    height: 2px;
+    background: linear-gradient(to right, transparent, blue, transparent);
+    opacity: 0;  
+    transform: scaleY(0); 
+    transition: opacity 0.3s ease-in-out, transform 0.3s ease-in-out;
+}
+.nav-link a:hover {
+    color: blue;
+}
+
+.nav-link a:hover::after {
+    opacity: 1; 
+    transform: scaleY(0.3);
+}
+.nav-icon {
+    display: flex;
+    gap: 20px;
+    font-size: 22px;
+    cursor: pointer;
+}
+
+.nav-icon i {
+    transition: color 0.3s ease;
+}
+
+.nav-icon i:hover {
+    color: #007bff;
+}
+
+/* thanh màu xanh dưới navbar */
+.navbar::after {
+    content: "";
+    position: absolute;
+    bottom: 0px;
+    left: 50%;
+    transform: translateX(-50%); 
+    width: 60%; 
+    height: 1px; /* thicc */
+    background: linear-gradient(to right, transparent, #007bff, transparent);
+}
