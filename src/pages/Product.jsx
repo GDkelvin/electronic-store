@@ -1,7 +1,7 @@
 import React from "react";
-import ProductCategory from '../components/ProductCategory'
-import ProductCard from '../components/ProductCard'
-import ProductFilter from '../components/ProductFilter'
+import ProductCategory from '../components/Product/ProductCategory'
+import ProductCard from '../components/Product/ProductCard'
+import ProductFilter from '../components/Product/ProductFilter'
 import "../css/Product.css"
 
 const Product = () => {

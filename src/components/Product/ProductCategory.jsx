@@ -1,6 +1,6 @@
 import React from "react";
 import "bootstrap-icons/font/bootstrap-icons.css";
-import "../css/ProductCategory.css";
+import "../../css/ProductCategory.css";
 const categories = [
     { name: "Mobile", icon: "bi-phone" },
     { name: "Laptop", icon: "bi-laptop" },

@@ -1,0 +1,41 @@
+.Shipping-detail{
+    max-height: 555px;
+    max-width: 624px;
+    padding: 20px;
+    box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.1);
+}
+.SD-container{
+    display: flex;
+    flex-direction: column;
+}
+.SD-container input{
+    color: #2D2D2D;
+    padding: 10px;
+    border: none;
+    outline: none;
+    background-color: #F6F6F6;
+    border-radius: 8px;
+    margin: 10px 0px;
+}
+.SD-container label{
+    font-weight: bold;
+}
+
+.editable-input {
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+
+.editable-input input {
+    flex: 1;
+    padding-right: 35px; 
+}
+
+.edit-icon {
+    position: absolute;
+    right: 10px;
+    color: #007bff; 
+    cursor: pointer;
+    font-size: 16px;
+}

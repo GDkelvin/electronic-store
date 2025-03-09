@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
-import laptop from "../assets/Laptop.jpg"
-import "../css/BasicProductDetails.css"
+import laptop from "../../assets/Laptop.jpg"
+import "../../css/BasicProductDetails.css"
 
 const BasicProductDetails = () => {
     const images = [laptop, laptop, laptop, laptop, laptop]
@@ -25,7 +25,6 @@ const BasicProductDetails = () => {
                     <div className="rating-section">
                         <span className="rating"><i className="bi bi-star-fill star-icon"></i> 4.9</span> <span className="stick">|</span> <span className="sold">Sold 125</span>
                     </div>
-
 
                     <div className="product-specs">
                         <ul>

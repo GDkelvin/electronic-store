@@ -1,11 +1,20 @@
 import React from "react";
-import BasicProductDetails from "../components/BasicProductDetails";
-
-const ProductDetail = () =>{
+import TechnicalDetails from "../components/ProductDetail/TechnicalDetails";
+import AddToCart from "../components/ProductDetail/AddToCart";
+import "../css/ProductDetail.css";
+import BasicProductDetails from "../components/ProductDetail/BasicProductDetails"
+const ProductDetail = () => {
     return (
         <>
             <div className="BPD">
-                <BasicProductDetails></BasicProductDetails>
+                <div >
+                    <BasicProductDetails />
+                    <TechnicalDetails />
+                </div>
+
+                <div >
+                    <AddToCart />
+                </div>
             </div>
         </>
     )

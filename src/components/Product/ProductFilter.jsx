@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import "../css/ProductFilter.css";
+import "../../css/ProductFilter.css";
 import "bootstrap-icons/font/bootstrap-icons.css";
 
 const ProductFilter = () => {

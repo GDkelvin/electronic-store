@@ -1,19 +1,27 @@
 .BPD-container{
     display: flex;
     width: 869px;
-    height: 406px;
+    max-height: 490px;
     align-items: start;
+    
 }
 
 .BPD-gallery{
     display: flex;
     flex-direction: column;
+    height: 100%;
+    
+    
+}
+
+.BPD-gallery-mainImg{
+    max-width: 496px;
+  
     
 }
 
 .BPD-gallery-mainImg img{
-    height: 338px;
-    width: 496px;
+    width: 100%;
     border-radius: 6px;
 }
 
@@ -38,7 +46,7 @@
     display: flex;
     flex-direction: column;
     max-width: 343px;
-    margin-left: 30px;
+    margin-left: 50px;
 }
 
 .rating-section{

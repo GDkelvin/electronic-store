@@ -1,10 +1,13 @@
 import React from "react";
 import { Link, useLocation } from "react-router-dom";
+import { useState } from "react";
 import logo from "../assets/logo.png"
 import "../css/Navbar.css"
 import "bootstrap-icons/font/bootstrap-icons.css";
+import AuthModal from "../pages/AuthPage";
 const Navbar = () => {
     const location = useLocation();
+    const [isModalOpen, setIsModalOpen] = useState(false);
     return (
         <>
             <nav className="navbar">
@@ -23,10 +26,11 @@ const Navbar = () => {
                 <div className="nav-icon">
                     <i className="bi bi-search"></i>
                     <i className="bi bi-basket2"></i>
-                    <i className="bi bi-person"></i>
+                    <i className="bi bi-person" onClick={() => setIsModalOpen(true)}></i>
                 </div>
             </nav>
 
+            {isModalOpen && <AuthModal onClose={() => setIsModalOpen(false)} />}
         </>
     )
 }

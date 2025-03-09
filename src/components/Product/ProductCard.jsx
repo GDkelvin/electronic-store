@@ -1,7 +1,7 @@
 import React from "react";
-import "../css/ProductCard.css";
-import laptopImg from "../assets/laptop.jpg";
-import line from "../assets/line.png";
+import "../../css/ProductCard.css";
+import laptopImg from "../../assets/laptop.jpg";
+import line from "../../assets/line.png";
 import { Link } from "react-router-dom";
 
 const ProductCard = () => {
