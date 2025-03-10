@@ -1,39 +1,44 @@
-*{
+* {
     margin: 0;
     padding: 0;
 }
+
 .navbar {
-    position: sticky; 
+    position: sticky;
     top: 0;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 15px 50px;
+    padding: 0px 50px;
     background-color: white;
     border-bottom: 1px solid #ddd;
-    z-index: 1;
+    z-index: 5;
+    
+    max-height: 54px;
 }
 
 .nav-logo img {
-    height: 50px;
+    height: 100%;
     width: auto;
 }
 
-
-.nav-link ul {
+.nav-links-container {
     display: flex;
-    list-style: none;
     gap: 30px;
+    list-style: none;
     margin: 0;
     padding: 0;
+    
 }
 
-.nav-link ul li {
+.nav-links-container div {
     font-size: 16px;
     position: relative;
+    padding: 15px 0px;
+    
 }
 
-.nav-link ul li a {
+.nav-links-container div a {
     text-decoration: none;
     color: black;
     font-weight: 200;
@@ -41,43 +46,46 @@
     padding: 8px 12px;
     transition: color 0.3s ease-in-out;
 }
+
 /* giữ màu cho trang active */
-.nav-link ul li a.active{
+.nav-links-container div a.active {
     color: #007bff;
 }
-.nav-link ul li a.active::after {
-    color: #007bff;
-    position: absolute;
-    left: 0;
-    bottom: -5px;
-    width: 100%;
-    height: 2px;
-    background: linear-gradient(to right, transparent, blue, transparent); 
-    opacity: 1; 
-    transform: scaleY(0.3);
-}
 
-
-.nav-link ul li a::after {
+.nav-links-container div a.active::after {
     content: "";
     position: absolute;
     left: 0;
-    bottom: -5px;
+    bottom: 12px;
     width: 100%;
     height: 2px;
     background: linear-gradient(to right, transparent, blue, transparent);
-    opacity: 0;  
-    transform: scaleY(0); 
+    opacity: 1;
+    transform: scaleY(0.3);
+}
+
+.nav-links-container div a::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 12px;
+    width: 100%;
+    height: 2px;
+    background: linear-gradient(to right, transparent, blue, transparent);
+    opacity: 0;
+    transform: scaleY(0);
     transition: opacity 0.3s ease-in-out, transform 0.3s ease-in-out;
 }
-.nav-link a:hover {
+
+.nav-links-container div a:hover {
     color: blue;
 }
 
-.nav-link a:hover::after {
-    opacity: 1; 
+.nav-links-container div a:hover::after {
+    opacity: 1;
     transform: scaleY(0.3);
 }
+
 .nav-icon {
     display: flex;
     gap: 20px;
@@ -99,8 +107,41 @@
     position: absolute;
     bottom: 0px;
     left: 50%;
-    transform: translateX(-50%); 
-    width: 60%; 
-    height: 1px; /* thicc */
+    transform: translateX(-50%);
+    width: 60%;
+    height: 1px;
     background: linear-gradient(to right, transparent, #007bff, transparent);
+}
+
+/* Search */
+.search-icon {
+    background: none;
+    border: none;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+/* Dark overlay */
+.overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    z-index: 3;
+}
+
+/* Product dropdown menu */
+.nav-dropdown-menu {
+    position: relative;
+}
+
+.nav-dropdown-menu .idk {
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    padding: 0;
+    transform: translate(-50%);
+    z-index: 5;
 }
