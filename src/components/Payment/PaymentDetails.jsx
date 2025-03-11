@@ -1,5 +1,6 @@
 import React from "react";
-import "../../css/PaymentDetails.css"
+import "../../css/PaymentDetails.css";
+import { Link } from "react-router-dom";
 const PaymentDetails = () => {
     return (
         <div className="PaymentDetails">
@@ -12,12 +13,16 @@ const PaymentDetails = () => {
                 <span>Discount</span>
                 <span>$500</span>
             </div>
+            <div className="shipment-cost">
+                <span>Shipment cost</span>
+                <span>$500</span>
+            </div>
             <hr></hr>
             <div className="grand-total">
                 <span>Grand Total</span>
                 <span>$500</span>
             </div>
-            <button className="PTC">Proceed to checkout</button>
+            <Link to="/checkout"><button className="PTC">Proceed to checkout</button></Link>
         </div>
     )
 }

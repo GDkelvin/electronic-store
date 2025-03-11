@@ -17,9 +17,9 @@ const PaymentMethod = () => {
             onChange={() => setPaymentMethod("creditCard")}
           />
           <span>Credit Cards</span>
-          <span className={styles.cardInfo}>AMERICAN EXPRESS</span>
+          <span className={styles.cardInfo}></span>
           <button className={styles.editButton}>✏️</button>
-          <button className={styles.addButton}>+</button>
+          {/* <button className={styles.addButton}>+</button> */}
         </label>
         <label className={`${styles.label} ${paymentMethod === "paypal" ? styles.selected : ""}`}>
           <input

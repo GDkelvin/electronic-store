@@ -5,13 +5,19 @@ import ShippingDetails from "../components/Payment/ShippingDetails";
 import ContinueToPay from "../components/Payment/ContinueToPay";
 import PaymentMethod from "../components/Payment/PaymentMethod";
 const Payment = () => {
-    return(
+    return (
         <div className="payment">
-            <PaymentProductCard></PaymentProductCard>
-            <PaymentDetails></PaymentDetails>
-            <ShippingDetails></ShippingDetails>
-            <ContinueToPay></ContinueToPay>
-            <PaymentMethod></PaymentMethod>
+            <div style={{ display: "flex", justifyContent: "space-between" }}>
+                <div style={{ width: "60%" }}>
+                    <PaymentMethod></PaymentMethod>
+                    <a href="/checkout" style={{ color: "#0C68F4", marginTop: "20px", display: "block" }}>Return to Checkout</a>
+                </div>
+                <div style={{ width: "40%" }}>
+                    <ContinueToPay></ContinueToPay>
+                </div>
+
+            </div>
+
         </div>
     )
 }

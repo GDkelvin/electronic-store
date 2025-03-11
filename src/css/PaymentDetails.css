@@ -5,17 +5,7 @@
     padding: 16px;
 }
 
-.sub-total {
-    display: flex;
-    justify-content: space-between;
-}
-
-.discount {
-    display: flex;
-    justify-content: space-between;
-}
-
-.grand-total {
+.sub-total, .shipment-cost, .discount, .grand-total {
     display: flex;
     justify-content: space-between;
 }
@@ -27,7 +17,8 @@
 }
 
 .sub-total,
-.discount {
+.discount,
+.shipment-cost {
     color: #717171;
     font-size: 14px;
 }

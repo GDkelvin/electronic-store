@@ -1,5 +1,6 @@
 import "../../css/ContinueToPay.css"
 import laptop from "../../assets/Laptop.jpg"
+import { Link } from "react-router-dom"
 const ContinueToPay = () => {
     return (
         <div className="your-order">
@@ -51,7 +52,7 @@ const ContinueToPay = () => {
                 <span style={{color:"#717171"}}>$543</span>
             </div>
             <div className="btn-continue">
-                <button>Continue to pay</button>
+                <Link to="/payment"><button>Continue to pay</button></Link>
             </div>
         </div>
     )

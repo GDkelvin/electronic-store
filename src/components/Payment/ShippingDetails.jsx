@@ -12,7 +12,7 @@ const ShippingDetails = () =>{
                     <i className="bi bi-pencil edit-icon"></i>
                 </div>
             </div>
-            <p>Return to Cart</p>
+            
         </div>
     )
 }
