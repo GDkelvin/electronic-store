@@ -12,13 +12,13 @@ Currently, two official plugins are available:
 1. Clone the repository:
 
    ```sh
-   git clone https://github.com/your-username/your-repository.git
+   git clone https://github.com/GDkelvin/electronic-store.git
    ```
 
 2. Navigate to the project directory:
 
    ```sh
-   cd your-repository
+   cd electronic-store
    ```
 
 3. Install dependencies:
@@ -30,6 +30,6 @@ Currently, two official plugins are available:
 4. Start the development server:
 
    ```sh
-   npm start
+   npm run dev
    ```
 
