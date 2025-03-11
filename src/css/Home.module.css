@@ -30,7 +30,7 @@
 /* New products */
 .new-products{
     width: 100%;
-    margin-top: 32px;
+    margin-top: 48px;
 }
 .new-products-header{
     display: flex;
@@ -43,4 +43,5 @@
     display: flex;
     justify-content: space-between;
     margin-top: 32px;
+    gap: 20px;
 }

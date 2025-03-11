@@ -18,7 +18,7 @@ const ProductCard = () => {
                     <img src={line} alt="divider" className="line" />
 
                     <div className="product-info">
-                        <p className="product-name">Laptop Go 3</p>
+                        <p className="product-name">Laptop </p>
 
                         <div className="product-footer">
                             <span className="product-price">$2490.87</span>

@@ -6,14 +6,6 @@ const categories = [
     { name: "Laptop", icon: "bi-laptop" },
     { name: "Tablet", icon: "bi-tablet" },
     { name: "Audio", icon: "bi-headphones" },
-    { name: "Audio", icon: "bi-headphones" },
-    { name: "Audio", icon: "bi-headphones" },
-    { name: "Audio", icon: "bi-headphones" },
-    { name: "Audio", icon: "bi-headphones" },
-    { name: "Audio", icon: "bi-headphones" },
-    { name: "Audio", icon: "bi-headphones" },
-    
-    
   ];
 
 const ProductCategory = () =>{

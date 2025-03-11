@@ -61,7 +61,7 @@ const Home = () => {
       {/* New Products */}
       <div className={styles["new-products"]}>
         <div className={styles["new-products-header"]}>
-          <h1>New Products</h1>
+          <h2>New Products</h2>
           <p>View all &gt; </p>
         </div>
         <div className={styles["new-products-productCard"]}>
@@ -69,12 +69,26 @@ const Home = () => {
           <ProductCard></ProductCard>
           <ProductCard></ProductCard>
           <ProductCard></ProductCard>
+          <ProductCard></ProductCard>
         </div>
       </div>
+
+      {/* Best Seller */}
+      <div className={styles["new-products"]}>
+        <div className={styles["new-products-header"]}>
+          <h2>Best Seller</h2>
+          <p>View all &gt; </p>
+        </div>
+        <div className={styles["new-products-productCard"]}>
+          <ProductCard></ProductCard>
+          <ProductCard></ProductCard>
+          <ProductCard></ProductCard>
+          <ProductCard></ProductCard>
+          <ProductCard></ProductCard>
+        </div>
+      </div>
+
     </div>
-
-
-
   );
 };
 
