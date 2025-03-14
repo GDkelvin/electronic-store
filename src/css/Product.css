@@ -24,7 +24,24 @@ a{
 
 .product-section {
   flex-grow: 1;
+  
 }
+.sort-product {
+  display: flex;
+  justify-content: flex-end; 
+  margin-bottom: 20px;
+}
+
+.sort-product select{
+  box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+  font-size: 18px;
+  width: 205px;
+  border: none;
+  outline: none;
+}
+
+
 
 .product-grid {
   display: grid;

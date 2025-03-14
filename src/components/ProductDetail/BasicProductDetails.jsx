@@ -25,6 +25,12 @@ const BasicProductDetails = () => {
                     <div className="rating-section">
                         <span className="rating"><i className="bi bi-star-fill star-icon"></i> 4.9</span> <span className="stick">|</span> <span className="sold">Sold 125</span>
                     </div>
+                    
+                    <div className="product-availability">
+                        <span className="availability in-stock"><i class="bi bi-shop-window"></i> In Stock</span>
+                        <span className="availability guaranteed"><i class="bi bi-patch-check"></i> Guaranteed</span>
+                        <span className="availability delivery"><i class="bi bi-truck"></i> Free Delivery</span>
+                    </div>
 
                     <div className="product-specs">
                         <ul>

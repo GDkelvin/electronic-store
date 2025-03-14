@@ -21,7 +21,7 @@ const PaymentMethod = () => {
           <button className={styles.editButton}>✏️</button>
           {/* <button className={styles.addButton}>+</button> */}
         </label>
-        <label className={`${styles.label} ${paymentMethod === "paypal" ? styles.selected : ""}`}>
+        <label className={`${styles.labelPaypal} ${paymentMethod === "paypal" ? styles.selected : ""}`}>
           <input
             type="radio"
             name="payment"

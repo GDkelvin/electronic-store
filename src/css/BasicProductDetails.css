@@ -66,6 +66,17 @@
     margin: 0px 10px;
 }
 
+.product-availability{
+    margin: 10px 0px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.product-availability i{
+    color: blue;
+}
+
+
 .product-specs ul {
     list-style: none;
     padding: 0;

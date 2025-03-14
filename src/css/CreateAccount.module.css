@@ -10,6 +10,9 @@
   align-items: center;
 }
 
+form{
+  width: 100%;
+}
 
 .login-top {
   display: flex;
@@ -35,6 +38,7 @@ h1 {
   display: flex;
   align-items: center;
   width: 100%;
+  box-sizing: border-box;
   margin: 8px 0;
 }
 
@@ -125,4 +129,13 @@ h1 {
 .btn-Google:hover,
 .btn-Facebook:hover {
   background-color: rgba(0, 0, 255, 0.1);
+}
+
+/* error text */
+.error {
+  color: red;
+  font-size: 14px;
+  text-align: left;
+  width: 100%;
+  max-width: 440px;
 }

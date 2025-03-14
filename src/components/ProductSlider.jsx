@@ -5,7 +5,8 @@ import "swiper/css";
 import "swiper/css/bundle";
 import "swiper/css/navigation";
 import styles from "../css/ProductSlider.module.css";
-import laptop from "../assets/Laptop.jpg"
+import laptop from "../assets/Laptop.jpg";
+import { Link } from "react-router-dom";
 
 const ProductSlider = ({ products }) => {
     return (
@@ -29,6 +30,7 @@ const ProductSlider = ({ products }) => {
 
                     {products.map((product, index) => (
                         <SwiperSlide key={index}>
+                            <Link to="/product/1">
                             <div className={styles.productCard}>
                                 <span className={styles.discountBadge}>{product.discount}</span>
                                 <img src={laptop} alt={product.name} />
@@ -36,6 +38,7 @@ const ProductSlider = ({ products }) => {
                                 <p className={styles.oldPrice}>${product.oldPrice}</p>
                                 <p className={styles.newPrice}>${product.newPrice}</p>
                             </div>
+                            </Link>
                         </SwiperSlide>
                     ))}
                 </Swiper>

@@ -26,7 +26,14 @@ h3 {
   border-radius: 6px;
   cursor: pointer;
 }
-
+.labelPaypal{
+  display: flex;
+  align-items: center;
+  background: #f8f8f8;
+  padding: 12px;
+  border-radius: 6px;
+  cursor: pointer;
+}
 
 input[type="radio"] {
   margin-right: 8px;

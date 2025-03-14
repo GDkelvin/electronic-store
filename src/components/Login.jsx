@@ -1,8 +1,14 @@
-import React from "react";
+import React, { useState } from "react";
 import styles from "../css/login_signup.module.css";
 import "bootstrap-icons/font/bootstrap-icons.css";
 
 function Login() {
+    const [form, setForm] = useState({
+        email: "",
+        password: "",
+    });
+    const [errors, setErrors] = useState({});
+    
     return (
         <div className={styles.login}>
             <h1>Login</h1>
